@@ -1,19 +1,12 @@
-# AmizonePlus
 
-Chrome extension (Manifest V3) that fixes the broken syllabus / session-plan
-"View" icons on Amizone's My Courses page. Instead of an empty modal or a
-`.docx` download named after a GUID, you get a small View / Download popover:
+# 🎓 AmizonePlus
 
-- **View** — PDFs open in Chrome's native viewer; `.docx` files are fetched
-  with your own session cookies, converted locally with mammoth.js, and shown
-  in a clean reading-mode page. Nothing is sent to any third-party service.
-- **Download** — same file, saved with a readable name built from the course
-  row, e.g. `CSE201_DataStructuresAndAlgorithms_Syllabus.docx`.
+Chrome extension (Manifest V3) that fixes the broken syllabus / session-plan "View" icons on Amizone's My Courses page. Instead of an empty modal or a `.docx` download named after a GUID, you get a small View / Download popover:
 
-If anything fails (auth expired, empty response from Amizone's backend,
-unsupported format), the click falls back to the site's original download
-behavior, so you're never stuck.
+- **View** — PDFs open in Chrome's native viewer; `.docx` files are fetched with your own session cookies, converted locally with mammoth.js, and shown in a clean reading-mode page. Nothing is sent to any third-party service.
+- **Download** — Same file, saved with a readable name built from the course row, e.g. `CSE201_DataStructuresAndAlgorithms_Syllabus.docx`.
 
+If anything fails (auth expired, empty response from Amizone's backend, unsupported format), the click falls back to the site's original download behavior, so you're never stuck. You can also quickly enable or disable the extension on the fly using the toggle switch in the toolbar popup.
 ## Load unpacked in Chrome
 
 1. Open `chrome://extensions`.
