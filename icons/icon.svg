@@ -1,0 +1,28 @@
+<!--
+  AmizonePlus logo — "A+" monogram.
+
+  Amizone + Plus, with the grade pun for free. Geometric "A" with round caps
+  in warm white on a near-black tile; amber "+" set as a superscript so the
+  mark reads as a single lockup, not a letter with a floating icon.
+
+  Palette: tile #16181D, glyph #F7F7F5, accent #F0A93C (amber — deliberately
+  not the default SaaS blue/purple).
+
+  The icon{16,48,128}.png files are rendered from this same geometry
+  (scratchpad script, SDF + supersampling). Size adaptations baked into the
+  PNGs: stroke is thickened at 48px and 16px, and the "+" is dropped at 16px
+  where it would be sub-pixel noise.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="28" fill="#16181D"/>
+  <!-- A: apex (50,36), feet (28,92)/(72,92), crossbar at y=73 -->
+  <g stroke="#F7F7F5" stroke-width="9.5" stroke-linecap="round" fill="none">
+    <path d="M28 92 L50 36 L72 92"/>
+    <path d="M37.4 73 H62.6"/>
+  </g>
+  <!-- plus: centered (96,40), 22x8 bars, fully rounded ends -->
+  <g fill="#F0A93C">
+    <rect x="85" y="36" width="22" height="8" rx="4"/>
+    <rect x="92" y="29" width="8" height="22" rx="4"/>
+  </g>
+</svg>
